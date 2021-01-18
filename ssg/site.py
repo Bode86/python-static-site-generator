@@ -11,7 +11,7 @@ class Site:
         directory.mkdir(parents=True, exists_ok=True)
 
     def  build(self):
-        self.dest.mkdir(parents=True, exists_ok=True)
-        for path in self.source.rglob("*"):
-            if path.is_dir():
-                self.create_dir(path)
+         self.dest.mkdir(parents=True, exists_ok=True)
+         for path in self.source.rglob("*"):
+             if path.is_dir():
+                 self.create_dir(path)
